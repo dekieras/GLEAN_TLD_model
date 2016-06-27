@@ -1,0 +1,565 @@
+Simulation initialized with 11 processors
+*** Simulation is starting ***
+0 Human Main(0): Starting to accomplish Process Buttons2
+--------------------
+0 TLD Device: Display: 
+Button1 (500, 200) 0
+Button2 (500, 300) 1
+Button3 (500, 400) 1
+Button4 (500, 500) 1
+Cursor pointing at Nil
+--------------------
+Contents of WM tag store:
+Visual Memory: 
+  Button1_V2:  Above:Button2_V3 Color:Green Event_type:New Location:(0.417335, 5.58587) Position:Top Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Alpha Type:Button
+  Button2_V3:  Above:Button3_V4 Below:Button1_V2 Color:Red Event_type:New Location:(0.417335, 2.3756) Position:Middle Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Beta  Type:Button
+  Button3_V4:  Above:Button4_V5 Below:Button2_V3 Color:Red Event_type:New Location:(0.417335, -0.834671) Position:Middle Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Gamma Type:Button
+  Button4_V5:  Below:Button3_V4 Color:Red Event_type:New Location:(0.417335, -4.04494) Position:Bottom Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Delta Type:Button
+  Cursor:  Color:Black Event_type:New Location:(-8.08989, 3.98074) Shape:Cursor_Arrow Size:(0.642055, 0.642055) Status:Out_of_focus Type:Cursor
+  Screen_V1:  Color:Black Event_type:New Location:(0, 0) Shape:Empty_Rectangle Size:(32.8732, 24.6549) Status:Out_of_focus Type:Screen
+  In focus: Nil
+Auditory Memory: Empty
+Task Memory: Empty
+  In focus: Nil
+High_Level Memory: Empty
+50 Human Main(0): executed: Step 1. Look_for_object_whose Shape is Button, and Position is Top and_store_under <current_button>.
+Contents of WM tag store:
+<current_button> Button1_V2
+Visual Memory: 
+  Button1_V2:  Above:Button2_V3 Color:Green Location:(0.417335, 5.58587) Position:Top Shape:Button Size:(1.60514, 0.642055) Status:In_focus Text:Alpha Type:Button
+  Button2_V3:  Above:Button3_V4 Below:Button1_V2 Color:Red Location:(0.417335, 2.3756) Position:Middle Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Beta  Type:Button
+  Button3_V4:  Above:Button4_V5 Below:Button2_V3 Color:Red Location:(0.417335, -0.834671) Position:Middle Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Gamma Type:Button
+  Button4_V5:  Below:Button3_V4 Color:Red Location:(0.417335, -4.04494) Position:Bottom Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Delta Type:Button
+  Cursor:  Color:Black Location:(-8.08989, 3.98074) Shape:Cursor_Arrow Size:(0.642055, 0.642055) Status:Out_of_focus Type:Cursor
+  Screen_V1:  Color:Black Location:(0, 0) Shape:Empty_Rectangle Size:(32.8732, 24.6549) Status:Out_of_focus Type:Screen
+  In focus: Button1_V2
+Auditory Memory: Empty
+Task Memory: Empty
+  In focus: Nil
+High_Level Memory: Empty
+1350 Human Main(0): executed: Step 2. Decide: 
+If Color of <current_button> is Red 
+Then Accomplish_goal: Click_on Button using <current_button>.
+Contents of WM tag store:
+<current_button> Button2_V3
+Visual Memory: 
+  Button1_V2:  Above:Button2_V3 Color:Green Location:(0.417335, 5.58587) Position:Top Shape:Button Size:(1.60514, 0.642055) Status:In_focus Text:Alpha Type:Button
+  Button2_V3:  Above:Button3_V4 Below:Button1_V2 Color:Red Location:(0.417335, 2.3756) Position:Middle Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Beta  Type:Button
+  Button3_V4:  Above:Button4_V5 Below:Button2_V3 Color:Red Location:(0.417335, -0.834671) Position:Middle Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Gamma Type:Button
+  Button4_V5:  Below:Button3_V4 Color:Red Location:(0.417335, -4.04494) Position:Bottom Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Delta Type:Button
+  Cursor:  Color:Black Location:(-8.08989, 3.98074) Shape:Cursor_Arrow Size:(0.642055, 0.642055) Status:Out_of_focus Type:Cursor
+  Screen_V1:  Color:Black Location:(0, 0) Shape:Empty_Rectangle Size:(32.8732, 24.6549) Status:Out_of_focus Type:Screen
+  In focus: Button1_V2
+Auditory Memory: Empty
+Task Memory: Empty
+  In focus: Nil
+High_Level Memory: Empty
+1400 Human Main(0): executed: Step 3. Store Above of <current_button> under <current_button>.
+Contents of WM tag store:
+<current_button> Button2_V3
+Visual Memory: 
+  Button1_V2:  Above:Button2_V3 Color:Green Location:(0.417335, 5.58587) Position:Top Shape:Button Size:(1.60514, 0.642055) Status:In_focus Text:Alpha Type:Button
+  Button2_V3:  Above:Button3_V4 Below:Button1_V2 Color:Red Location:(0.417335, 2.3756) Position:Middle Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Beta  Type:Button
+  Button3_V4:  Above:Button4_V5 Below:Button2_V3 Color:Red Location:(0.417335, -0.834671) Position:Middle Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Gamma Type:Button
+  Button4_V5:  Below:Button3_V4 Color:Red Location:(0.417335, -4.04494) Position:Bottom Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Delta Type:Button
+  Cursor:  Color:Black Location:(-8.08989, 3.98074) Shape:Cursor_Arrow Size:(0.642055, 0.642055) Status:Out_of_focus Type:Cursor
+  Screen_V1:  Color:Black Location:(0, 0) Shape:Empty_Rectangle Size:(32.8732, 24.6549) Status:Out_of_focus Type:Screen
+  In focus: Button1_V2
+Auditory Memory: Empty
+Task Memory: Empty
+  In focus: Nil
+High_Level Memory: Empty
+1450 Human Main(0): executed: Step 4. Decide: 
+If <current_button> is Nil 
+Then Return_with_goal_accomplished.
+Contents of WM tag store:
+<current_button> Button2_V3
+Visual Memory: 
+  Button1_V2:  Above:Button2_V3 Color:Green Location:(0.417335, 5.58587) Position:Top Shape:Button Size:(1.60514, 0.642055) Status:In_focus Text:Alpha Type:Button
+  Button2_V3:  Above:Button3_V4 Below:Button1_V2 Color:Red Location:(0.417335, 2.3756) Position:Middle Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Beta  Type:Button
+  Button3_V4:  Above:Button4_V5 Below:Button2_V3 Color:Red Location:(0.417335, -0.834671) Position:Middle Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Gamma Type:Button
+  Button4_V5:  Below:Button3_V4 Color:Red Location:(0.417335, -4.04494) Position:Bottom Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Delta Type:Button
+  Cursor:  Color:Black Location:(-8.08989, 3.98074) Shape:Cursor_Arrow Size:(0.642055, 0.642055) Status:Out_of_focus Type:Cursor
+  Screen_V1:  Color:Black Location:(0, 0) Shape:Empty_Rectangle Size:(32.8732, 24.6549) Status:Out_of_focus Type:Screen
+  In focus: Button1_V2
+Auditory Memory: Empty
+Task Memory: Empty
+  In focus: Nil
+High_Level Memory: Empty
+1500 Human Main(0): executed: Step 5. Look_at <current_button>.
+Contents of WM tag store:
+<current_button> Button2_V3
+Visual Memory: 
+  Button1_V2:  Above:Button2_V3 Color:Green Location:(0.417335, 5.58587) Position:Top Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Alpha Type:Button
+  Button2_V3:  Above:Button3_V4 Below:Button1_V2 Color:Red Location:(0.417335, 2.3756) Position:Middle Shape:Button Size:(1.60514, 0.642055) Status:In_focus Text:Beta  Type:Button
+  Button3_V4:  Above:Button4_V5 Below:Button2_V3 Color:Red Location:(0.417335, -0.834671) Position:Middle Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Gamma Type:Button
+  Button4_V5:  Below:Button3_V4 Color:Red Location:(0.417335, -4.04494) Position:Bottom Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Delta Type:Button
+  Cursor:  Color:Black Location:(-8.08989, 3.98074) Shape:Cursor_Arrow Size:(0.642055, 0.642055) Status:Out_of_focus Type:Cursor
+  Screen_V1:  Color:Black Location:(0, 0) Shape:Empty_Rectangle Size:(32.8732, 24.6549) Status:Out_of_focus Type:Screen
+  In focus: Button2_V3
+Auditory Memory: Empty
+Task Memory: Empty
+  In focus: Nil
+High_Level Memory: Empty
+1800 Human Main(0): executed: Step 6. Goto 2.
+Contents of WM tag store:
+<button_obj> Button2_V3
+<current_button> Button2_V3
+Visual Memory: 
+  Button1_V2:  Above:Button2_V3 Color:Green Location:(0.417335, 5.58587) Position:Top Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Alpha Type:Button
+  Button2_V3:  Above:Button3_V4 Below:Button1_V2 Color:Red Location:(0.417335, 2.3756) Position:Middle Shape:Button Size:(1.60514, 0.642055) Status:In_focus Text:Beta  Type:Button
+  Button3_V4:  Above:Button4_V5 Below:Button2_V3 Color:Red Location:(0.417335, -0.834671) Position:Middle Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Gamma Type:Button
+  Button4_V5:  Below:Button3_V4 Color:Red Location:(0.417335, -4.04494) Position:Bottom Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Delta Type:Button
+  Cursor:  Color:Black Location:(-8.08989, 3.98074) Shape:Cursor_Arrow Size:(0.642055, 0.642055) Status:Out_of_focus Type:Cursor
+  Screen_V1:  Color:Black Location:(0, 0) Shape:Empty_Rectangle Size:(32.8732, 24.6549) Status:Out_of_focus Type:Screen
+  In focus: Button2_V3
+Auditory Memory: Empty
+Task Memory: Empty
+  In focus: Nil
+High_Level Memory: Empty
+1850 Human Main(0): executed: Step 2. Decide: 
+If Color of <current_button> is Red 
+Then Accomplish_goal: Click_on Button using <current_button>.
+Contents of WM tag store:
+<button_obj> Button2_V3
+<current_button> Button2_V3
+Visual Memory: 
+  Button1_V2:  Above:Button2_V3 Color:Green Location:(0.417335, 5.58587) Position:Top Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Alpha Type:Button
+  Button2_V3:  Above:Button3_V4 Below:Button1_V2 Color:Red Location:(0.417335, 2.3756) Position:Middle Shape:Button Size:(1.60514, 0.642055) Status:In_focus Text:Beta  Type:Button
+  Button3_V4:  Above:Button4_V5 Below:Button2_V3 Color:Red Location:(0.417335, -0.834671) Position:Middle Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Gamma Type:Button
+  Button4_V5:  Below:Button3_V4 Color:Red Location:(0.417335, -4.04494) Position:Bottom Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Delta Type:Button
+  Cursor:  Color:Black Location:(-8.08989, 3.98074) Shape:Cursor_Arrow Size:(0.642055, 0.642055) Status:Out_of_focus Type:Cursor
+  Screen_V1:  Color:Black Location:(0, 0) Shape:Empty_Rectangle Size:(32.8732, 24.6549) Status:Out_of_focus Type:Screen
+  In focus: Button2_V3
+Auditory Memory: Empty
+Task Memory: Empty
+  In focus: Nil
+High_Level Memory: Empty
+1900 Human Main(0): executed: Step 2. Point_to <button_obj>.
+--------------------
+2652 TLD Device: Display: 
+Button1 (500, 200) 0
+Button2 (500, 300) 1
+Button3 (500, 400) 1
+Button4 (500, 500) 1
+Cursor pointing at Button2
+--------------------
+Contents of WM tag store:
+<button_obj> Button2_V3
+<current_button> Button2_V3
+Visual Memory: 
+  Button1_V2:  Above:Button2_V3 Color:Green Location:(0.417335, 5.58587) Position:Top Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Alpha Type:Button
+  Button2_V3:  Above:Button3_V4 Below:Button1_V2 Color:Red Location:(0.417335, 2.3756) Position:Middle Shape:Button Size:(1.60514, 0.642055) Status:In_focus Text:Beta  Type:Button
+  Button3_V4:  Above:Button4_V5 Below:Button2_V3 Color:Red Location:(0.417335, -0.834671) Position:Middle Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Gamma Type:Button
+  Button4_V5:  Below:Button3_V4 Color:Red Location:(0.417335, -4.04494) Position:Bottom Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Delta Type:Button
+  Cursor:  Color:Black Location:(-0.0642055, 2.3756) Pointing_to:Button2 Shape:Cursor_Arrow Size:(0.642055, 0.642055) Status:Out_of_focus Type:Cursor
+  Screen_V1:  Color:Black Location:(0, 0) Shape:Empty_Rectangle Size:(32.8732, 24.6549) Status:Out_of_focus Type:Screen
+  In focus: Button2_V3
+Auditory Memory: Empty
+Task Memory: Empty
+  In focus: Nil
+High_Level Memory: Empty
+2700 Human Main(0): executed: Step 3. Click B1.
+--------------------
+2948 TLD Device: Display: 
+Button1 (500, 200) 0
+Button2 (500, 300) 0
+Button3 (500, 400) 1
+Button4 (500, 500) 1
+Cursor pointing at Button2
+--------------------
+2950 Human LOG processed:  Button2_V3 
+Contents of WM tag store:
+<button_obj> Button2_V3
+<current_button> Button2_V3
+Visual Memory: 
+  Button1_V2:  Above:Button2_V3 Color:Green Location:(0.417335, 5.58587) Position:Top Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Alpha Type:Button
+  Button2_V3:  Above:Button3_V4 Below:Button1_V2 Color:Green Event_type:Color_changed Location:(0.417335, 2.3756) Position:Middle Shape:Button Size:(1.60514, 0.642055) Status:In_focus Text:Beta  Type:Button
+  Button3_V4:  Above:Button4_V5 Below:Button2_V3 Color:Red Location:(0.417335, -0.834671) Position:Middle Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Gamma Type:Button
+  Button4_V5:  Below:Button3_V4 Color:Red Location:(0.417335, -4.04494) Position:Bottom Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Delta Type:Button
+  Cursor:  Color:Black Location:(-0.0642055, 2.3756) Pointing_to:Button2 Shape:Cursor_Arrow Size:(0.642055, 0.642055) Status:Out_of_focus Type:Cursor
+  Screen_V1:  Color:Black Location:(0, 0) Shape:Empty_Rectangle Size:(32.8732, 24.6549) Status:Out_of_focus Type:Screen
+  In focus: Button2_V3
+Auditory Memory: Empty
+Task Memory: Empty
+  In focus: Nil
+High_Level Memory: Empty
+2950 Human Main(0): executed: Step 4. Log processed: , <button_obj>.
+Contents of WM tag store:
+<current_button> Button2_V3
+Visual Memory: 
+  Button1_V2:  Above:Button2_V3 Color:Green Location:(0.417335, 5.58587) Position:Top Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Alpha Type:Button
+  Button2_V3:  Above:Button3_V4 Below:Button1_V2 Color:Green Event_type:Color_changed Location:(0.417335, 2.3756) Position:Middle Shape:Button Size:(1.60514, 0.642055) Status:In_focus Text:Beta  Type:Button
+  Button3_V4:  Above:Button4_V5 Below:Button2_V3 Color:Red Location:(0.417335, -0.834671) Position:Middle Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Gamma Type:Button
+  Button4_V5:  Below:Button3_V4 Color:Red Location:(0.417335, -4.04494) Position:Bottom Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Delta Type:Button
+  Cursor:  Color:Black Location:(-0.0642055, 2.3756) Pointing_to:Button2 Shape:Cursor_Arrow Size:(0.642055, 0.642055) Status:Out_of_focus Type:Cursor
+  Screen_V1:  Color:Black Location:(0, 0) Shape:Empty_Rectangle Size:(32.8732, 24.6549) Status:Out_of_focus Type:Screen
+  In focus: Button2_V3
+Auditory Memory: Empty
+Task Memory: Empty
+  In focus: Nil
+High_Level Memory: Empty
+3000 Human Main(0): executed: Step 5. Delete <button_obj>; Return_with_goal_accomplished.
+Contents of WM tag store:
+<current_button> Button3_V4
+Visual Memory: 
+  Button1_V2:  Above:Button2_V3 Color:Green Location:(0.417335, 5.58587) Position:Top Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Alpha Type:Button
+  Button2_V3:  Above:Button3_V4 Below:Button1_V2 Color:Green Event_type:Color_changed Location:(0.417335, 2.3756) Position:Middle Shape:Button Size:(1.60514, 0.642055) Status:In_focus Text:Beta  Type:Button
+  Button3_V4:  Above:Button4_V5 Below:Button2_V3 Color:Red Location:(0.417335, -0.834671) Position:Middle Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Gamma Type:Button
+  Button4_V5:  Below:Button3_V4 Color:Red Location:(0.417335, -4.04494) Position:Bottom Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Delta Type:Button
+  Cursor:  Color:Black Location:(-0.0642055, 2.3756) Pointing_to:Button2 Shape:Cursor_Arrow Size:(0.642055, 0.642055) Status:Out_of_focus Type:Cursor
+  Screen_V1:  Color:Black Location:(0, 0) Shape:Empty_Rectangle Size:(32.8732, 24.6549) Status:Out_of_focus Type:Screen
+  In focus: Button2_V3
+Auditory Memory: Empty
+Task Memory: Empty
+  In focus: Nil
+High_Level Memory: Empty
+3050 Human Main(0): executed: Step 3. Store Above of <current_button> under <current_button>.
+Contents of WM tag store:
+<current_button> Button3_V4
+Visual Memory: 
+  Button1_V2:  Above:Button2_V3 Color:Green Location:(0.417335, 5.58587) Position:Top Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Alpha Type:Button
+  Button2_V3:  Above:Button3_V4 Below:Button1_V2 Color:Green Event_type:Color_changed Location:(0.417335, 2.3756) Position:Middle Shape:Button Size:(1.60514, 0.642055) Status:In_focus Text:Beta  Type:Button
+  Button3_V4:  Above:Button4_V5 Below:Button2_V3 Color:Red Location:(0.417335, -0.834671) Position:Middle Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Gamma Type:Button
+  Button4_V5:  Below:Button3_V4 Color:Red Location:(0.417335, -4.04494) Position:Bottom Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Delta Type:Button
+  Cursor:  Color:Black Location:(-0.0642055, 2.3756) Pointing_to:Button2 Shape:Cursor_Arrow Size:(0.642055, 0.642055) Status:Out_of_focus Type:Cursor
+  Screen_V1:  Color:Black Location:(0, 0) Shape:Empty_Rectangle Size:(32.8732, 24.6549) Status:Out_of_focus Type:Screen
+  In focus: Button2_V3
+Auditory Memory: Empty
+Task Memory: Empty
+  In focus: Nil
+High_Level Memory: Empty
+3100 Human Main(0): executed: Step 4. Decide: 
+If <current_button> is Nil 
+Then Return_with_goal_accomplished.
+Contents of WM tag store:
+<current_button> Button3_V4
+Visual Memory: 
+  Button1_V2:  Above:Button2_V3 Color:Green Location:(0.417335, 5.58587) Position:Top Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Alpha Type:Button
+  Button2_V3:  Above:Button3_V4 Below:Button1_V2 Color:Green Event_type:Color_changed Location:(0.417335, 2.3756) Position:Middle Shape:Button Size:(1.60514, 0.642055) Status:In_focus Text:Beta  Type:Button
+  Button3_V4:  Above:Button4_V5 Below:Button2_V3 Color:Red Location:(0.417335, -0.834671) Position:Middle Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Gamma Type:Button
+  Button4_V5:  Below:Button3_V4 Color:Red Location:(0.417335, -4.04494) Position:Bottom Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Delta Type:Button
+  Cursor:  Color:Black Location:(-0.0642055, 2.3756) Pointing_to:Button2 Shape:Cursor_Arrow Size:(0.642055, 0.642055) Status:Out_of_focus Type:Cursor
+  Screen_V1:  Color:Black Location:(0, 0) Shape:Empty_Rectangle Size:(32.8732, 24.6549) Status:Out_of_focus Type:Screen
+  In focus: Button2_V3
+Auditory Memory: Empty
+Task Memory: Empty
+  In focus: Nil
+High_Level Memory: Empty
+3150 Human Main(0): executed: Step 5. Look_at <current_button>.
+Contents of WM tag store:
+<current_button> Button3_V4
+Visual Memory: 
+  Button1_V2:  Above:Button2_V3 Color:Green Location:(0.417335, 5.58587) Position:Top Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Alpha Type:Button
+  Button2_V3:  Above:Button3_V4 Below:Button1_V2 Color:Green Location:(0.417335, 2.3756) Position:Middle Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Beta  Type:Button
+  Button3_V4:  Above:Button4_V5 Below:Button2_V3 Color:Red Location:(0.417335, -0.834671) Position:Middle Shape:Button Size:(1.60514, 0.642055) Status:In_focus Text:Gamma Type:Button
+  Button4_V5:  Below:Button3_V4 Color:Red Location:(0.417335, -4.04494) Position:Bottom Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Delta Type:Button
+  Cursor:  Color:Black Location:(-0.0642055, 2.3756) Pointing_to:Button2 Shape:Cursor_Arrow Size:(0.642055, 0.642055) Status:Out_of_focus Type:Cursor
+  Screen_V1:  Color:Black Location:(0, 0) Shape:Empty_Rectangle Size:(32.8732, 24.6549) Status:Out_of_focus Type:Screen
+  In focus: Button3_V4
+Auditory Memory: Empty
+Task Memory: Empty
+  In focus: Nil
+High_Level Memory: Empty
+3450 Human Main(0): executed: Step 6. Goto 2.
+Contents of WM tag store:
+<button_obj> Button3_V4
+<current_button> Button3_V4
+Visual Memory: 
+  Button1_V2:  Above:Button2_V3 Color:Green Location:(0.417335, 5.58587) Position:Top Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Alpha Type:Button
+  Button2_V3:  Above:Button3_V4 Below:Button1_V2 Color:Green Location:(0.417335, 2.3756) Position:Middle Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Beta  Type:Button
+  Button3_V4:  Above:Button4_V5 Below:Button2_V3 Color:Red Location:(0.417335, -0.834671) Position:Middle Shape:Button Size:(1.60514, 0.642055) Status:In_focus Text:Gamma Type:Button
+  Button4_V5:  Below:Button3_V4 Color:Red Location:(0.417335, -4.04494) Position:Bottom Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Delta Type:Button
+  Cursor:  Color:Black Location:(-0.0642055, 2.3756) Pointing_to:Button2 Shape:Cursor_Arrow Size:(0.642055, 0.642055) Status:Out_of_focus Type:Cursor
+  Screen_V1:  Color:Black Location:(0, 0) Shape:Empty_Rectangle Size:(32.8732, 24.6549) Status:Out_of_focus Type:Screen
+  In focus: Button3_V4
+Auditory Memory: Empty
+Task Memory: Empty
+  In focus: Nil
+High_Level Memory: Empty
+3500 Human Main(0): executed: Step 2. Decide: 
+If Color of <current_button> is Red 
+Then Accomplish_goal: Click_on Button using <current_button>.
+Contents of WM tag store:
+<button_obj> Button3_V4
+<current_button> Button3_V4
+Visual Memory: 
+  Button1_V2:  Above:Button2_V3 Color:Green Location:(0.417335, 5.58587) Position:Top Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Alpha Type:Button
+  Button2_V3:  Above:Button3_V4 Below:Button1_V2 Color:Green Location:(0.417335, 2.3756) Position:Middle Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Beta  Type:Button
+  Button3_V4:  Above:Button4_V5 Below:Button2_V3 Color:Red Location:(0.417335, -0.834671) Position:Middle Shape:Button Size:(1.60514, 0.642055) Status:In_focus Text:Gamma Type:Button
+  Button4_V5:  Below:Button3_V4 Color:Red Location:(0.417335, -4.04494) Position:Bottom Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Delta Type:Button
+  Cursor:  Color:Black Location:(-0.0642055, 2.3756) Pointing_to:Button2 Shape:Cursor_Arrow Size:(0.642055, 0.642055) Status:Out_of_focus Type:Cursor
+  Screen_V1:  Color:Black Location:(0, 0) Shape:Empty_Rectangle Size:(32.8732, 24.6549) Status:Out_of_focus Type:Screen
+  In focus: Button3_V4
+Auditory Memory: Empty
+Task Memory: Empty
+  In focus: Nil
+High_Level Memory: Empty
+3550 Human Main(0): executed: Step 2. Point_to <button_obj>.
+--------------------
+3895 TLD Device: Display: 
+Button1 (500, 200) 0
+Button2 (500, 300) 0
+Button3 (500, 400) 1
+Button4 (500, 500) 1
+Cursor pointing at Button3
+--------------------
+Contents of WM tag store:
+<button_obj> Button3_V4
+<current_button> Button3_V4
+Visual Memory: 
+  Button1_V2:  Above:Button2_V3 Color:Green Location:(0.417335, 5.58587) Position:Top Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Alpha Type:Button
+  Button2_V3:  Above:Button3_V4 Below:Button1_V2 Color:Green Location:(0.417335, 2.3756) Position:Middle Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Beta  Type:Button
+  Button3_V4:  Above:Button4_V5 Below:Button2_V3 Color:Red Location:(0.417335, -0.834671) Position:Middle Shape:Button Size:(1.60514, 0.642055) Status:In_focus Text:Gamma Type:Button
+  Button4_V5:  Below:Button3_V4 Color:Red Location:(0.417335, -4.04494) Position:Bottom Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Delta Type:Button
+  Cursor:  Color:Black Location:(-0.0642055, -0.834671) Pointing_to:Button3 Shape:Cursor_Arrow Size:(0.642055, 0.642055) Status:Out_of_focus Type:Cursor
+  Screen_V1:  Color:Black Location:(0, 0) Shape:Empty_Rectangle Size:(32.8732, 24.6549) Status:Out_of_focus Type:Screen
+  In focus: Button3_V4
+Auditory Memory: Empty
+Task Memory: Empty
+  In focus: Nil
+High_Level Memory: Empty
+3900 Human Main(0): executed: Step 3. Click B1.
+--------------------
+4148 TLD Device: Display: 
+Button1 (500, 200) 0
+Button2 (500, 300) 0
+Button3 (500, 400) 0
+Button4 (500, 500) 1
+Cursor pointing at Button3
+--------------------
+4150 Human LOG processed:  Button3_V4 
+Contents of WM tag store:
+<button_obj> Button3_V4
+<current_button> Button3_V4
+Visual Memory: 
+  Button1_V2:  Above:Button2_V3 Color:Green Location:(0.417335, 5.58587) Position:Top Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Alpha Type:Button
+  Button2_V3:  Above:Button3_V4 Below:Button1_V2 Color:Green Location:(0.417335, 2.3756) Position:Middle Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Beta  Type:Button
+  Button3_V4:  Above:Button4_V5 Below:Button2_V3 Color:Green Event_type:Color_changed Location:(0.417335, -0.834671) Position:Middle Shape:Button Size:(1.60514, 0.642055) Status:In_focus Text:Gamma Type:Button
+  Button4_V5:  Below:Button3_V4 Color:Red Location:(0.417335, -4.04494) Position:Bottom Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Delta Type:Button
+  Cursor:  Color:Black Location:(-0.0642055, -0.834671) Pointing_to:Button3 Shape:Cursor_Arrow Size:(0.642055, 0.642055) Status:Out_of_focus Type:Cursor
+  Screen_V1:  Color:Black Location:(0, 0) Shape:Empty_Rectangle Size:(32.8732, 24.6549) Status:Out_of_focus Type:Screen
+  In focus: Button3_V4
+Auditory Memory: Empty
+Task Memory: Empty
+  In focus: Nil
+High_Level Memory: Empty
+4150 Human Main(0): executed: Step 4. Log processed: , <button_obj>.
+Contents of WM tag store:
+<current_button> Button3_V4
+Visual Memory: 
+  Button1_V2:  Above:Button2_V3 Color:Green Location:(0.417335, 5.58587) Position:Top Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Alpha Type:Button
+  Button2_V3:  Above:Button3_V4 Below:Button1_V2 Color:Green Location:(0.417335, 2.3756) Position:Middle Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Beta  Type:Button
+  Button3_V4:  Above:Button4_V5 Below:Button2_V3 Color:Green Event_type:Color_changed Location:(0.417335, -0.834671) Position:Middle Shape:Button Size:(1.60514, 0.642055) Status:In_focus Text:Gamma Type:Button
+  Button4_V5:  Below:Button3_V4 Color:Red Location:(0.417335, -4.04494) Position:Bottom Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Delta Type:Button
+  Cursor:  Color:Black Location:(-0.0642055, -0.834671) Pointing_to:Button3 Shape:Cursor_Arrow Size:(0.642055, 0.642055) Status:Out_of_focus Type:Cursor
+  Screen_V1:  Color:Black Location:(0, 0) Shape:Empty_Rectangle Size:(32.8732, 24.6549) Status:Out_of_focus Type:Screen
+  In focus: Button3_V4
+Auditory Memory: Empty
+Task Memory: Empty
+  In focus: Nil
+High_Level Memory: Empty
+4200 Human Main(0): executed: Step 5. Delete <button_obj>; Return_with_goal_accomplished.
+Contents of WM tag store:
+<current_button> Button4_V5
+Visual Memory: 
+  Button1_V2:  Above:Button2_V3 Color:Green Location:(0.417335, 5.58587) Position:Top Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Alpha Type:Button
+  Button2_V3:  Above:Button3_V4 Below:Button1_V2 Color:Green Location:(0.417335, 2.3756) Position:Middle Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Beta  Type:Button
+  Button3_V4:  Above:Button4_V5 Below:Button2_V3 Color:Green Event_type:Color_changed Location:(0.417335, -0.834671) Position:Middle Shape:Button Size:(1.60514, 0.642055) Status:In_focus Text:Gamma Type:Button
+  Button4_V5:  Below:Button3_V4 Color:Red Location:(0.417335, -4.04494) Position:Bottom Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Delta Type:Button
+  Cursor:  Color:Black Location:(-0.0642055, -0.834671) Pointing_to:Button3 Shape:Cursor_Arrow Size:(0.642055, 0.642055) Status:Out_of_focus Type:Cursor
+  Screen_V1:  Color:Black Location:(0, 0) Shape:Empty_Rectangle Size:(32.8732, 24.6549) Status:Out_of_focus Type:Screen
+  In focus: Button3_V4
+Auditory Memory: Empty
+Task Memory: Empty
+  In focus: Nil
+High_Level Memory: Empty
+4250 Human Main(0): executed: Step 3. Store Above of <current_button> under <current_button>.
+Contents of WM tag store:
+<current_button> Button4_V5
+Visual Memory: 
+  Button1_V2:  Above:Button2_V3 Color:Green Location:(0.417335, 5.58587) Position:Top Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Alpha Type:Button
+  Button2_V3:  Above:Button3_V4 Below:Button1_V2 Color:Green Location:(0.417335, 2.3756) Position:Middle Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Beta  Type:Button
+  Button3_V4:  Above:Button4_V5 Below:Button2_V3 Color:Green Event_type:Color_changed Location:(0.417335, -0.834671) Position:Middle Shape:Button Size:(1.60514, 0.642055) Status:In_focus Text:Gamma Type:Button
+  Button4_V5:  Below:Button3_V4 Color:Red Location:(0.417335, -4.04494) Position:Bottom Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Delta Type:Button
+  Cursor:  Color:Black Location:(-0.0642055, -0.834671) Pointing_to:Button3 Shape:Cursor_Arrow Size:(0.642055, 0.642055) Status:Out_of_focus Type:Cursor
+  Screen_V1:  Color:Black Location:(0, 0) Shape:Empty_Rectangle Size:(32.8732, 24.6549) Status:Out_of_focus Type:Screen
+  In focus: Button3_V4
+Auditory Memory: Empty
+Task Memory: Empty
+  In focus: Nil
+High_Level Memory: Empty
+4300 Human Main(0): executed: Step 4. Decide: 
+If <current_button> is Nil 
+Then Return_with_goal_accomplished.
+Contents of WM tag store:
+<current_button> Button4_V5
+Visual Memory: 
+  Button1_V2:  Above:Button2_V3 Color:Green Location:(0.417335, 5.58587) Position:Top Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Alpha Type:Button
+  Button2_V3:  Above:Button3_V4 Below:Button1_V2 Color:Green Location:(0.417335, 2.3756) Position:Middle Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Beta  Type:Button
+  Button3_V4:  Above:Button4_V5 Below:Button2_V3 Color:Green Event_type:Color_changed Location:(0.417335, -0.834671) Position:Middle Shape:Button Size:(1.60514, 0.642055) Status:In_focus Text:Gamma Type:Button
+  Button4_V5:  Below:Button3_V4 Color:Red Location:(0.417335, -4.04494) Position:Bottom Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Delta Type:Button
+  Cursor:  Color:Black Location:(-0.0642055, -0.834671) Pointing_to:Button3 Shape:Cursor_Arrow Size:(0.642055, 0.642055) Status:Out_of_focus Type:Cursor
+  Screen_V1:  Color:Black Location:(0, 0) Shape:Empty_Rectangle Size:(32.8732, 24.6549) Status:Out_of_focus Type:Screen
+  In focus: Button3_V4
+Auditory Memory: Empty
+Task Memory: Empty
+  In focus: Nil
+High_Level Memory: Empty
+4350 Human Main(0): executed: Step 5. Look_at <current_button>.
+Contents of WM tag store:
+<current_button> Button4_V5
+Visual Memory: 
+  Button1_V2:  Above:Button2_V3 Color:Green Location:(0.417335, 5.58587) Position:Top Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Alpha Type:Button
+  Button2_V3:  Above:Button3_V4 Below:Button1_V2 Color:Green Location:(0.417335, 2.3756) Position:Middle Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Beta  Type:Button
+  Button3_V4:  Above:Button4_V5 Below:Button2_V3 Color:Green Location:(0.417335, -0.834671) Position:Middle Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Gamma Type:Button
+  Button4_V5:  Below:Button3_V4 Color:Red Location:(0.417335, -4.04494) Position:Bottom Shape:Button Size:(1.60514, 0.642055) Status:In_focus Text:Delta Type:Button
+  Cursor:  Color:Black Location:(-0.0642055, -0.834671) Pointing_to:Button3 Shape:Cursor_Arrow Size:(0.642055, 0.642055) Status:Out_of_focus Type:Cursor
+  Screen_V1:  Color:Black Location:(0, 0) Shape:Empty_Rectangle Size:(32.8732, 24.6549) Status:Out_of_focus Type:Screen
+  In focus: Button4_V5
+Auditory Memory: Empty
+Task Memory: Empty
+  In focus: Nil
+High_Level Memory: Empty
+4650 Human Main(0): executed: Step 6. Goto 2.
+Contents of WM tag store:
+<button_obj> Button4_V5
+<current_button> Button4_V5
+Visual Memory: 
+  Button1_V2:  Above:Button2_V3 Color:Green Location:(0.417335, 5.58587) Position:Top Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Alpha Type:Button
+  Button2_V3:  Above:Button3_V4 Below:Button1_V2 Color:Green Location:(0.417335, 2.3756) Position:Middle Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Beta  Type:Button
+  Button3_V4:  Above:Button4_V5 Below:Button2_V3 Color:Green Location:(0.417335, -0.834671) Position:Middle Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Gamma Type:Button
+  Button4_V5:  Below:Button3_V4 Color:Red Location:(0.417335, -4.04494) Position:Bottom Shape:Button Size:(1.60514, 0.642055) Status:In_focus Text:Delta Type:Button
+  Cursor:  Color:Black Location:(-0.0642055, -0.834671) Pointing_to:Button3 Shape:Cursor_Arrow Size:(0.642055, 0.642055) Status:Out_of_focus Type:Cursor
+  Screen_V1:  Color:Black Location:(0, 0) Shape:Empty_Rectangle Size:(32.8732, 24.6549) Status:Out_of_focus Type:Screen
+  In focus: Button4_V5
+Auditory Memory: Empty
+Task Memory: Empty
+  In focus: Nil
+High_Level Memory: Empty
+4700 Human Main(0): executed: Step 2. Decide: 
+If Color of <current_button> is Red 
+Then Accomplish_goal: Click_on Button using <current_button>.
+Contents of WM tag store:
+<button_obj> Button4_V5
+<current_button> Button4_V5
+Visual Memory: 
+  Button1_V2:  Above:Button2_V3 Color:Green Location:(0.417335, 5.58587) Position:Top Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Alpha Type:Button
+  Button2_V3:  Above:Button3_V4 Below:Button1_V2 Color:Green Location:(0.417335, 2.3756) Position:Middle Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Beta  Type:Button
+  Button3_V4:  Above:Button4_V5 Below:Button2_V3 Color:Green Location:(0.417335, -0.834671) Position:Middle Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Gamma Type:Button
+  Button4_V5:  Below:Button3_V4 Color:Red Location:(0.417335, -4.04494) Position:Bottom Shape:Button Size:(1.60514, 0.642055) Status:In_focus Text:Delta Type:Button
+  Cursor:  Color:Black Location:(-0.0642055, -0.834671) Pointing_to:Button3 Shape:Cursor_Arrow Size:(0.642055, 0.642055) Status:Out_of_focus Type:Cursor
+  Screen_V1:  Color:Black Location:(0, 0) Shape:Empty_Rectangle Size:(32.8732, 24.6549) Status:Out_of_focus Type:Screen
+  In focus: Button4_V5
+Auditory Memory: Empty
+Task Memory: Empty
+  In focus: Nil
+High_Level Memory: Empty
+4750 Human Main(0): executed: Step 2. Point_to <button_obj>.
+--------------------
+5095 TLD Device: Display: 
+Button1 (500, 200) 0
+Button2 (500, 300) 0
+Button3 (500, 400) 0
+Button4 (500, 500) 1
+Cursor pointing at Button4
+--------------------
+Contents of WM tag store:
+<button_obj> Button4_V5
+<current_button> Button4_V5
+Visual Memory: 
+  Button1_V2:  Above:Button2_V3 Color:Green Location:(0.417335, 5.58587) Position:Top Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Alpha Type:Button
+  Button2_V3:  Above:Button3_V4 Below:Button1_V2 Color:Green Location:(0.417335, 2.3756) Position:Middle Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Beta  Type:Button
+  Button3_V4:  Above:Button4_V5 Below:Button2_V3 Color:Green Location:(0.417335, -0.834671) Position:Middle Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Gamma Type:Button
+  Button4_V5:  Below:Button3_V4 Color:Red Location:(0.417335, -4.04494) Position:Bottom Shape:Button Size:(1.60514, 0.642055) Status:In_focus Text:Delta Type:Button
+  Cursor:  Color:Black Location:(-0.0642055, -4.04494) Pointing_to:Button4 Shape:Cursor_Arrow Size:(0.642055, 0.642055) Status:Out_of_focus Type:Cursor
+  Screen_V1:  Color:Black Location:(0, 0) Shape:Empty_Rectangle Size:(32.8732, 24.6549) Status:Out_of_focus Type:Screen
+  In focus: Button4_V5
+Auditory Memory: Empty
+Task Memory: Empty
+  In focus: Nil
+High_Level Memory: Empty
+5100 Human Main(0): executed: Step 3. Click B1.
+--------------------
+5348 TLD Device: Display: 
+Button1 (500, 200) 0
+Button2 (500, 300) 0
+Button3 (500, 400) 0
+Button4 (500, 500) 0
+Cursor pointing at Button4
+--------------------
+5350 Human LOG processed:  Button4_V5 
+Contents of WM tag store:
+<button_obj> Button4_V5
+<current_button> Button4_V5
+Visual Memory: 
+  Button1_V2:  Above:Button2_V3 Color:Green Location:(0.417335, 5.58587) Position:Top Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Alpha Type:Button
+  Button2_V3:  Above:Button3_V4 Below:Button1_V2 Color:Green Location:(0.417335, 2.3756) Position:Middle Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Beta  Type:Button
+  Button3_V4:  Above:Button4_V5 Below:Button2_V3 Color:Green Location:(0.417335, -0.834671) Position:Middle Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Gamma Type:Button
+  Button4_V5:  Below:Button3_V4 Color:Green Event_type:Color_changed Location:(0.417335, -4.04494) Position:Bottom Shape:Button Size:(1.60514, 0.642055) Status:In_focus Text:Delta Type:Button
+  Cursor:  Color:Black Location:(-0.0642055, -4.04494) Pointing_to:Button4 Shape:Cursor_Arrow Size:(0.642055, 0.642055) Status:Out_of_focus Type:Cursor
+  Screen_V1:  Color:Black Location:(0, 0) Shape:Empty_Rectangle Size:(32.8732, 24.6549) Status:Out_of_focus Type:Screen
+  In focus: Button4_V5
+Auditory Memory: Empty
+Task Memory: Empty
+  In focus: Nil
+High_Level Memory: Empty
+5350 Human Main(0): executed: Step 4. Log processed: , <button_obj>.
+Contents of WM tag store:
+<current_button> Button4_V5
+Visual Memory: 
+  Button1_V2:  Above:Button2_V3 Color:Green Location:(0.417335, 5.58587) Position:Top Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Alpha Type:Button
+  Button2_V3:  Above:Button3_V4 Below:Button1_V2 Color:Green Location:(0.417335, 2.3756) Position:Middle Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Beta  Type:Button
+  Button3_V4:  Above:Button4_V5 Below:Button2_V3 Color:Green Location:(0.417335, -0.834671) Position:Middle Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Gamma Type:Button
+  Button4_V5:  Below:Button3_V4 Color:Green Event_type:Color_changed Location:(0.417335, -4.04494) Position:Bottom Shape:Button Size:(1.60514, 0.642055) Status:In_focus Text:Delta Type:Button
+  Cursor:  Color:Black Location:(-0.0642055, -4.04494) Pointing_to:Button4 Shape:Cursor_Arrow Size:(0.642055, 0.642055) Status:Out_of_focus Type:Cursor
+  Screen_V1:  Color:Black Location:(0, 0) Shape:Empty_Rectangle Size:(32.8732, 24.6549) Status:Out_of_focus Type:Screen
+  In focus: Button4_V5
+Auditory Memory: Empty
+Task Memory: Empty
+  In focus: Nil
+High_Level Memory: Empty
+5400 Human Main(0): executed: Step 5. Delete <button_obj>; Return_with_goal_accomplished.
+Contents of WM tag store:
+Visual Memory: 
+  Button1_V2:  Above:Button2_V3 Color:Green Location:(0.417335, 5.58587) Position:Top Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Alpha Type:Button
+  Button2_V3:  Above:Button3_V4 Below:Button1_V2 Color:Green Location:(0.417335, 2.3756) Position:Middle Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Beta  Type:Button
+  Button3_V4:  Above:Button4_V5 Below:Button2_V3 Color:Green Location:(0.417335, -0.834671) Position:Middle Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Gamma Type:Button
+  Button4_V5:  Below:Button3_V4 Color:Green Event_type:Color_changed Location:(0.417335, -4.04494) Position:Bottom Shape:Button Size:(1.60514, 0.642055) Status:In_focus Text:Delta Type:Button
+  Cursor:  Color:Black Location:(-0.0642055, -4.04494) Pointing_to:Button4 Shape:Cursor_Arrow Size:(0.642055, 0.642055) Status:Out_of_focus Type:Cursor
+  Screen_V1:  Color:Black Location:(0, 0) Shape:Empty_Rectangle Size:(32.8732, 24.6549) Status:Out_of_focus Type:Screen
+  In focus: Button4_V5
+Auditory Memory: Empty
+Task Memory: Empty
+  In focus: Nil
+High_Level Memory: Empty
+5450 Human Main(0): executed: Step 3. Store Above of <current_button> under <current_button>.
+Contents of WM tag store:
+Visual Memory: 
+  Button1_V2:  Above:Button2_V3 Color:Green Location:(0.417335, 5.58587) Position:Top Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Alpha Type:Button
+  Button2_V3:  Above:Button3_V4 Below:Button1_V2 Color:Green Location:(0.417335, 2.3756) Position:Middle Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Beta  Type:Button
+  Button3_V4:  Above:Button4_V5 Below:Button2_V3 Color:Green Location:(0.417335, -0.834671) Position:Middle Shape:Button Size:(1.60514, 0.642055) Status:Out_of_focus Text:Gamma Type:Button
+  Button4_V5:  Below:Button3_V4 Color:Green Event_type:Color_changed Location:(0.417335, -4.04494) Position:Bottom Shape:Button Size:(1.60514, 0.642055) Status:In_focus Text:Delta Type:Button
+  Cursor:  Color:Black Location:(-0.0642055, -4.04494) Pointing_to:Button4 Shape:Cursor_Arrow Size:(0.642055, 0.642055) Status:Out_of_focus Type:Cursor
+  Screen_V1:  Color:Black Location:(0, 0) Shape:Empty_Rectangle Size:(32.8732, 24.6549) Status:Out_of_focus Type:Screen
+  In focus: Button4_V5
+Auditory Memory: Empty
+Task Memory: Empty
+  In focus: Nil
+High_Level Memory: Empty
+5500 Human Main(0): executed: Step 4. Decide: 
+If <current_button> is Nil 
+Then Return_with_goal_accomplished.
+5500:Human:Cognitive_processor: No more steps to execute.
+--------------------
+6394 TLD Device: Display: 
+Button1 (500, 200) 0
+Button2 (500, 300) 0
+Button3 (500, 400) 0
+Button4 (500, 500) 0
+Blip0 (240, 200)
+Cursor pointing at Button4
+--------------------
+Simulation Done!
+Run time was 6.894 sec (simulated), 0.500992 sec (process), 515 sec (wallclock)
+Run Completed!

@@ -1,0 +1,197 @@
+
+Define_model: "Top Level Examples with TLD_device (Top Level Demo)"
+Starting_goal is Process Buttons2.	// change this to invoke each example method
+
+/* 
+The TLD_device creates a set of buttons in a vertical row; some are red. 
+The red buttons (and only the red buttons) have to be clicked on, 
+The clicked-on red buttons are changed to green. 
+Another button, the Urgent button appears at a random time. If it is
+clicked on, the button will disappear one second later, and 
+the TLD_device will stop the simulation with probability .5,
+otherwise, the button will reappear after a random time.
+*/
+
+
+Method_for_goal: Process RedObjects
+Step 1. Look_for_object_whose Color is Red and_store_under <current_object>.
+Step 2. Decide: If <current_object> is Absent, Then Goto 1.
+Step 2. Point_to <current_object>.
+Step 3. Click B1. 
+Step 4. Log "processed: ", <current_object>.
+Step 5. Goto 1.
+
+
+
+/*
+The following method uses the vertical layout of the buttons to examine
+each one in turn. It starts at the top and checks each button,
+doing a Look_for on each button, but not using the color code
+in the Look_for. Once the button has been focussed on, its
+color is accessed, and if it is Red, then it is processed.
+The next Look_for specifies an object below the current button.
+For simplicity, the models that follow the vertical layout of the buttons
+assume that at least a top and bottom button is present.
+
+This model halts when it reaches the last button.
+*/
+
+
+Method_for_goal: Process Buttons1
+Step 1. Look_for_object_whose Type is Button, and Position is Top 
+	and_store_under <current_button>.
+Step 2. Decide: If Color of <current_button> is Red, 
+	Then Accomplish_goal: Click_on Button using <current_button>.
+Step 3. Decide: If Position of <current_button> is Bottom, 
+	Then Return_with_goal_accomplished.
+Step 4. Look_for_object_whose Type is Button, and Below is <current_button>
+	and_store_under <current_button>.
+Step 5. Goto 2.
+
+
+/* 
+The following method uses the vertical layout of the buttons to examine
+each one in turn. It starts at the top and checks each button,
+doing a Look_for on each button, but not using the color code
+in the Look_for. Once the button has been focussed on, its
+color is accessed, and if it is Red, then it is processed.
+It finds the next object by checking what the current button is Above, 
+and then using the Look_at operator, which quickly focuses on that object.
+
+This model halts when it reaches the last button.
+*/
+
+Method_for_goal: Process Buttons2
+Step 1. Look_for_object_whose Shape is Button, and Position is Top 
+	and_store_under <current_button>.
+Step 2. Decide: If Color of <current_button> is Red, 
+	Then Accomplish_goal: Click_on Button using <current_button>.
+Step 3. Store Above of <current_button> under <current_button>.
+Step 4. Decide: If <current_button> is Nil, 
+	Then Return_with_goal_accomplished.
+Step 5. Look_at <current_button>.	// focus on the next button
+Step 6. Goto 2.
+
+Method_for_goal: Process Buttons2Org
+Step 1. Look_for_object_whose Type is Button, and Position is Top 
+	and_store_under <current_button>.
+Step 2. Decide: If Color of <current_button> is Red, 
+	Then Accomplish_goal: Click_on Button using <current_button>.
+Step 3. Store Above of <current_button> under <current_button>.
+Step 4. Decide: If <current_button> is Nil, 
+	Then Return_with_goal_accomplished.
+Step 5. Look_at <current_button>.	// focus on the next button
+Step 6. Goto 2.
+
+
+/*
+The following method does not use the vertical-list structure of the buttons
+at all, and assumes that any button might turn red at any time, even after
+it has been clicked. So no attempt to made to keep track of whether we have already
+clicked on it or not. Look_for with the Color specified is used to locate a red
+button chosen at random from all the visible red buttons. 
+The task continues indefinitely until no red buttons are visible. 
+This model is the simplest, but does not process the buttons in a set order.
+
+This model will not terminate with the dummy device because the state of 
+the dummy device does not change - there are always the same number of red buttons.
+
+The TLD_device will change the button colors, and the model will halt if there
+are no Red buttons left. 
+*/
+
+Method_for_goal: Process Buttons3
+Step 1. Look_for_object_whose Type is Button, and Color is Red 
+	and_store_under <current_button>.
+Step 2. Decide: If <current_button> is Absent, Then Return_with_goal_accomplished.
+Step 3. Accomplish_goal: Click_on Button using <current_button>.
+Step 4. Goto 1.
+
+
+/*
+The following method does not use the vertical-list structure of the buttons
+nor the ability to search for it by color code. It looks at each button it finds,
+looks in the task memory to see if it has already been processed. 
+If not, and it is red, the method clicks on it and stores its information in 
+task memory. Note that "Status" is a reserved word internal to GLEAN, 
+and so can't be used as the property name for the stored status of the button. 
+The method continues indefinitely until no buttons are visible. 
+
+This demonstrates that GLEAN does not have a way of "filtering" the visual object selected
+using the content of the task memory (or tag memory). Instead it has to pick a
+visual object using Look_for, and then check to see if the chosen object has some
+other information associated with it. Whether this is a deficiency or a psychological
+accuracy remains to be determined.
+
+This model will not terminate with the dummy device or the TLD_device,
+because all of the buttons remain on the display.
+*/
+
+Method_for_goal: Process Buttons4
+Step 1. Look_for_object_whose Type is Button and_store_under <current_button>.
+Step 2. Decide: If <current_button> is Absent, Then Return_with_goal_accomplished.
+// look up the button label in task memory
+Step 3. Get_task_item_whose Label is Label of <current_button> and_store_under <task_info>.
+Step 4. Decide: 
+	If <task_info> is_not Absent, and task_status of <task_info> is processed, Then Goto 1;
+	If Color of <current_button> is_not Red, Then Goto 1.
+// create and store the task object for the to-be-processed button.
+Step 5. Write_task_item_whose  Label is Label of <current_button>, 
+		task_status is unprocessed and_store_under <task_info>.
+Step 6. Accomplish_goal: Click_on Button using <current_button>.
+Step 7. Update_for_task_item <task_info> that task_status is processed.
+Step 8. Goto 1.
+
+
+/*
+The following method first builds a list using the task memory that contains
+the visual object names of the buttons that are red. It follows the vertical layout
+to ensure it considers each button exactly once. Then it traverses the task list
+and processes each button in the list, updating that is is processed along the way. 
+
+The purpose of this example is simply to illustrate how to use the task list facility. 
+It is certainly much slower and clumsier than the other methods on this simple example.
+*/
+
+Method_for_goal: Process Buttons5
+Step 1. Create_task_list button_list.
+Step 2. Accomplish_goal: Fill List.
+Step 3. Accomplish_goal: Process List.
+Step 4. Return_with_goal_accomplished.
+
+
+Method_for_goal: Fill List
+Step 1. Look_for_object_whose Type is Button, and Position is Top 
+	and_store_under <current_button>.
+Step 2. Decide: 
+	If <current_button> is Absent, 
+		Then Return_with_goal_accomplished;
+	If Color of <current_button> is Red, 
+		Then Log "saved in list: ", <current_button>;
+			Append_item <current_button> to_task_list button_list.
+Step 3. Decide: If Position of <current_button> is Bottom, 
+	Then Delete <current_button>; Return_with_goal_accomplished.
+Step 4. Look_for_object_whose Type is Button, and Below is <current_button>
+	and_store_under <current_button>.
+Step 5. Goto 2.
+
+
+Method_for_goal: Process List
+Step 1. Find_first_item_in_task_list button_list and_store_under <item>.
+Step 2. Decide: If <item> is Absent, Then Delete <item>; Return_with_goal_accomplished.
+Step 3. Accomplish_goal: Click_on Button using <item>.
+Step 4. Update_for_task_item <item> that task_status is processed.
+Step 5. Find_item_after <item> and_store_under <item>.
+Step 6. Goto 2.
+
+
+
+
+// This is a stand-in for a more complex method
+Method_for_goal: Click_on Button using <button_obj>
+Step 2. Point_to <button_obj>.
+Step 3. Click B1. 
+Step 4. Log "processed: ", <button_obj>.
+Step 5. Delete <button_obj>; Return_with_goal_accomplished.
+
+
